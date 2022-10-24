@@ -1,4 +1,4 @@
-package gg.overcast.commands.command;
+package gg.overcast.commands;
 
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;

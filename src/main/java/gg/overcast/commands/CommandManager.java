@@ -1,4 +1,4 @@
-package gg.overcast.commands.command;
+package gg.overcast.commands;
 
 import org.bukkit.command.CommandMap;
 import org.bukkit.plugin.java.JavaPlugin;
