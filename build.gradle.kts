@@ -1,5 +1,6 @@
 plugins {
     id("java")
+    `maven-publish`
 }
 
 group = "gg.overcast.commands"
@@ -20,4 +21,15 @@ repositories {
 
 dependencies {
     compileOnly("org.spigotmc:spigot-api:1.19.2-R0.1-SNAPSHOT")
+}
+
+publishing {
+    publications {
+        create<MavenPublication>("maven") {
+            groupId = "gg.overcast"
+            artifactId = "OvercastCommands"
+            version = "1.0"
+            from(components["java"])
+        }
+    }
 }
